@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta age="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klaten Survey</title>
+    <link rel="stylesheet" href="style.css " />
+  </head>
+  <body>
+    <h1 id="title">Klaten Survey Form</h1>
+    <p id="description">Please fill the form. Thank you!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="Enter your age" min="15" max="40" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        How do you know Klaten
+        <select id="dropdown">
+          <option>Test 1</option>
+          <option>Test 2</option>
+          <option>Test 3</option>
+        </select>
+      </label>
+      <label for="favorite" id="favorite-label"> What is your favorite cafe </label>
+      <input type="radio" name="favorite" value="1" /> test 1 <br />
+      <input type="radio" name="favorite" value="2" /> test 1 <br />
+      <input type="radio" name="favorite" value="3" /> test 1 <br />
+      <input type="radio" name="favorite" value="4" /> test 1 <br />
+      <input type="radio" name="favorite" value="5" /> test 1 <br />
+      <input type="radio" name="favorite" value="6" /> test 1 <br />
+      <input type="radio" name="favorite" value="7" /> test 1 <br />
+
+      <br /><br />
+      <label for="menu" id="menu-label"> What is your favorite menu </label>
+      <input type="checkbox" value="arabica" />Arabika <br />
+      <input type="checkbox" value="robusta" />Robusta <br />
+      <input type="checkbox" value="liberika" />Liberika <br />
+      <input type="checkbox" value="ekselsa" />Ekselsa <br />
+      <input type="checkbox" value="gayo" />Gayo <br />
+      <input type="checkbox" value="mandailing" />Mandailing <br />
+      <input type="checkbox" value="sidikalang" />Sidikalang <br />
+      <input type="checkbox" value="bali-kintamani" />Bali Kintamani <br />
+      <input type="checkbox" value="toraja" />Toraja <br />
+      <input type="checkbox" value="java-preanger" />Java Preanger <br />
+      <input type="checkbox" value="papua-wamena" />Papua Wamena <br />
+      <input type="checkbox" value="flores-bajawa" />Flores Bajawa <br />
+      <input type="checkbox" value="signature" />Signature <br />
+
+      <br /><br />
+      <label for="comment" id="comment-label"> What is/are your comment? </label>
+      <textarea id="comment" cols="30" rows="10"></textarea>
+
+      <br /><br />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
